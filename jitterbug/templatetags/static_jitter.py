@@ -8,11 +8,11 @@ from django import template
 from django.conf import settings
 from django.contrib.staticfiles.templatetags.staticfiles import static
 
-# register = template.Library()
+register = template.Library()
 
 
-# @register.simple_tag
-def combobulate(user_agent, filename):
+@register.simple_tag
+def static_jitter(user_agent, filename):
     app_root = settings.PROJECT_ROOT
     browser = httpagentparser.detect(user_agent).get('browser', {})
     browser_name = browser.get('name', 'IE').lower()
