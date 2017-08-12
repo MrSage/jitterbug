@@ -9,4 +9,4 @@ The files are transpiled based on the http user agent of the request. Currently 
 ## Installing
 TODO
 
-This project relies on the (babel)[https://www.npmjs.com/package/Babel] and (babili-cli)[https://www.npmjs.com/package/babel-cli] packages being installed globally. They are used to transpile and minify the files for incoming requests. You'll also need to install all of the plugins listed in [plugins.json](jitterbug/static/plugins.json). You can use `jitterbug.install_helper.run_npm_install` to install of these.
+This project relies on the [babel](https://www.npmjs.com/package/Babel) and [babili-cli](https://www.npmjs.com/package/babel-cli) packages being installed globally. They are used to transpile and minify the files for incoming requests. You'll also need to install all of the plugins listed in [plugins.json](jitterbug/static/plugins.json). You can use `jitterbug.install_helper.run_npm_install` to install of these.
